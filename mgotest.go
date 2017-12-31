@@ -23,7 +23,6 @@ var mgoWaitingForConnections = []byte("waiting for connections on port")
 var configTemplate, configTemplateErr = template.New("config").Parse(`
 bind_ip          = 127.0.0.1
 dbpath           = {{.DBPath}}
-nohttpinterface  = true
 nojournal        = true
 noprealloc       = true
 nounixsocket     = true
